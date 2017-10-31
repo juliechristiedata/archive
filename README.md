@@ -1,2 +1,2 @@
 # juliechristietemple.github.io
-Temple University Data Journalism Portfolio
+Main site for Julie Christie, student journalist and coder based in Philadelphia.
