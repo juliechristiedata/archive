@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    #container {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto
+}
+  </style>
+
+  <title>Highcharts Demo by ttnwebeditor</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+  
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.setOptions({
+    chart: {
+        style: {
+            fontFamily: 'Roboto, sans-serif'
+        }
+    }
+});
+// Build the chart
+Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Types of schools visited',
+        align: 'left',
+        style: {
+            fontWeight: 700,
+        }
+    },
+    subtitle: {
+        text: 'Philadelphia Mayor Jim Kenney visited 74 schools in almost two years, at a rate of one school every 9.4 days. However, that only makes up a little more than 13 percent of all the schools in the city.',
+        align: 'left',
+    },
+    exporting: {
+        enabled: false
+    },
+    credits: {
+        enabled: true,
+        text: 'SOURCE: Mayor’s public schedules from January 2016 through November 2017.',
+        href: ''
+    },
+    tooltip: {
+        formatter: function() {
+        return 'Kenney visited <b>' + this.y + '</b> ' + this.point.name +'.';
+    }
+},
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: '',
+        colorByPoint: true,
+        data: [{
+            name: 'District schools',
+            y: 49
+        }, {
+            name: 'Private Schools',
+            y: 21
+        }, {
+            name: 'Charter Schools',
+            y: 4
+        }]
+    }]
+});
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "3fsp6sp2"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+
