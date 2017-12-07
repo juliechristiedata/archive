@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    #container {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto
+}
+  </style>
+
+  <title>Rebuild diversity goals</title>
+
+  
+</head>
+
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+  
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+Highcharts.setOptions({
+    chart: {
+        style: {
+            fontFamily: 'Roboto, sans-serif'
+        }
+    }
+});
+// Build the chart
+Highcharts.setOptions({
+    chart: {
+        style: {
+            fontFamily: 'Roboto, sans-serif'
+        }
+    }
+});
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Rebuild business contract diversity goals'
+    },
+    xAxis: {
+        categories: ['Professional services contracts', 'Construction contracts',],
+        labels: {
+            style: {
+            width:'100px',
+          }
+        }
+        
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'Other',
+        data: [55, 55],
+        color: '#19c679'
+    }, {
+        name: 'Women',
+        data: [15, 15],
+        color: '#15A364'
+    },
+    {
+        name: 'Minority',
+        data: [25, 30],
+        color: '#11804f'
+    }]
+});
+//]]> 
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "3fsp6sp2"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
